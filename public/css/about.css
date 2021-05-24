@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla&display=swap');
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  font-family: 'Piazzolla', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #d76c3b;
+  --main-secondary-color: #f5f5f5;
+}
+
+/* -------------------------------APPLYING CSS TO NAVBAR---------------------------- */
+.main_menu {
+  background-color: var(--main-secondary-color);
+}
+
+.brand {
+  font-family: 'Reggae One', cursive;
+  font-weight: 600;
+  font-size: 25px;
+  color: #000;
+}
+
+.navbar a {
+  color: #000 !important;
+  margin-right: 20px;
+  font-weight: 600;
+}
+
+.brand {
+  font-family: 'Reggae One', cursive;
+  font-weight: 600;
+  font-size: 25px;
+  color: var(--main-color);
+}
+
+/* -------------------------------------APPLYING CSS TO FOOTER-------------------------- */
+
+.footer {
+  padding: 10px 7px;
+  background-color: var(--main-secondary-color);
+  word-spacing: 3px;
+  font-weight: 600;
+}
+
+/* ------------------------------------------APPLYING CSS TO CONTENT OF ABOUT US----------------- */
+
+.main_about_left img {
+  width: 400px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+.span_content {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.about_header {
+  margin: 40px 0 20px 0;
+}
+
+.about_link {
+  color: var(--main-color);
+}
+
+.social_icon {
+  margin: 10px 0 25px 0;
+}
+
+.icon {
+  font-size: 15px;
+  margin-left: 15px;
+  padding: 10px;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+  transition: all 0.3s linear;
+}
+
+.icon:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+/* -----------------------------------------------RESPONSIVE CODE--------------------------------------- */
+
+@media only screen and (min-width: 1300px) {
+  /* MAKING RESPONSIVE FOOTER AFTER 1300px */
+  .footer {
+    padding: 10px 0;
+    background-color: var(--main-secondary-color);
+    word-spacing: 3px;
+    font-weight: 600;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  /* DECREASING THE WIDTH AND HEIGHT OF THE IMAGE BELOW 440PX */
+  .main_about_left img {
+    width: 300px;
+    height: 300px;
+  }
+}

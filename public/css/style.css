@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla&display=swap');
+
+* {
+  font-family: 'Piazzolla', serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #d76c3b;
+  --main-secondary-color: #f5f5f5;
+}
+
+/* -------------------------------APPLYING CSS TO NAVBAR---------------------------- */
+.main_menu {
+  background-color: var(--main-secondary-color);
+}
+
+.brand {
+  font-family: 'Reggae One', cursive;
+  font-weight: 600;
+  font-size: 25px;
+  color: #000;
+}
+
+.navbar a {
+  color: #000 !important;
+  margin-right: 20px;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: var(--main-color) !important ;
+}
+
+/* ------------------------------------------APPLYING CSS TO CONTENT OF HOME PAGE--------------------- */
+.main_header {
+  background-image: url('../images/homebg.png');
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_header_content h1 {
+  color: var(--main-secondary-color);
+}
+
+.main_header_content {
+  padding: 150px 30px;
+}
+
+.main_header_content .span_content {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.main_header_content .btn {
+  margin: 20px 0;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.main_header_content .btn:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+/* -------------------------------------APPLYING CSS TO FOOTER-------------------------- */
+
+.footer {
+  padding: 10px 7px;
+  background-color: var(--main-secondary-color);
+  word-spacing: 3px;
+  font-weight: 600;
+}
